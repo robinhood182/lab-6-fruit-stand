@@ -4,15 +4,13 @@
 function insertFruits() {
     var fruitDisplay = document.getElementById('fruit-list');
     for(var i = 0; i < fruits.length; i++) {
-        console.log(fruits[i].createLi());
+        var fruitImage = fruits[i].insertImage();
         var fruitList = fruits[i].createLi();
-        console.log(fruitList);
         fruitDisplay.appendChild(fruitList);
+        fruitDisplay.appendChild(fruitImage);
+        
     }
 
 }
 
-function insertImage() {
-    
-}
 insertFruits();

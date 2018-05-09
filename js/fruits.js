@@ -12,22 +12,34 @@ var fruits = [
         image: 'images/mango.jpg',
         createLi: function() {
             const li = document.createElement('li');
-            li.textContent = this.name + this.color;
+            li.textContent = this.name + 's are ' + this.taste + ' and ' + this.color;
+            li.style.color = 'orange';
             return li;
+        },
+        insertImage: function() {
+            var fruitPic = document.createElement('img');
+            fruitPic.setAttribute('src', this.image);
+            return fruitPic;
         }
     },
 
     {
         name: 'Avocado',
-        taste: 'neutral',
+        taste: 'buttery',
         color: 'green',
         insideColor: 'yellow',
         price: 2,
         image: 'images/avocado.jpg',
         createLi: function() {
             const li = document.createElement('li');
-            li.textContent = this.name + this.color;
+            li.textContent = this.name + 's are ' + this.taste + ' and ' + this.color;
+            li.style.color = 'green';
             return li;
+        },
+        insertImage: function() {
+            var fruitPic = document.createElement('img');
+            fruitPic.setAttribute('src', this.image);
+            return fruitPic;
         }
     },
 
@@ -40,8 +52,14 @@ var fruits = [
         image: 'images/pepper.jpg',
         createLi: function() {
             const li = document.createElement('li');
-            li.textContent = this.name + this.color;
+            li.textContent = this.name + 's are ' + this.taste + ' and ' + this.color;
+            li.style.color = 'red';
             return li;
+        },
+        insertImage: function() {
+            var fruitPic = document.createElement('img');
+            fruitPic.setAttribute('src', this.image);
+            return fruitPic;
         }
     },
 
@@ -54,8 +72,14 @@ var fruits = [
         image: 'images/guanabana.jpg',
         createLi: function() {
             const li = document.createElement('li');
-            li.textContent = this.name + this.color;
+            li.textContent = this.name + 's are ' + this.taste + ' and ' + this.color;
+            li.style.color = 'green';
             return li;
+        },
+        insertImage: function() {
+            var fruitPic = document.createElement('img');
+            fruitPic.setAttribute('src', this.image);
+            return fruitPic;
         }
     }
 ];
